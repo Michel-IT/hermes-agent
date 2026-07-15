@@ -1106,6 +1106,7 @@ Built-in themes:
 | **Mono** (`mono`) | Grayscale, IBM Plex, compact |
 | **Cyberpunk** (`cyberpunk`) | Neon green on black, Share Tech Mono |
 | **Rosé** (`rose`) | Pink + ivory, Fraunces serif, spacious |
+| **Aurora** (`aurora`) | Dark frosted-glass, gold + indigo radial glows, Inter + JetBrains Mono |
 
 To build your own theme, add a plugin tab, inject into shell slots, or expose plugin-specific REST endpoints, see **[Extending the Dashboard](./extending-the-dashboard)** — the complete guide covers:
 
