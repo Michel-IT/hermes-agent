@@ -91,8 +91,10 @@ export const it = defineLocale({
       repairInstall: 'Ripara installazione',
       useLocalGateway: 'Usa gateway locale',
       openLogs: 'Apri log',
-      repairHint: 'La riparazione riesegue il programma di installazione e può richiedere alcuni minuti su una macchina nuova.',
-      remoteSignInHint: 'Apre la finestra di accesso al gateway. Usa il gateway locale per passare al backend integrato.',
+      repairHint:
+        'La riparazione riesegue il programma di installazione e può richiedere alcuni minuti su una macchina nuova.',
+      remoteSignInHint:
+        'Apre la finestra di accesso al gateway. Usa il gateway locale per passare al backend integrato.',
       hideRecentLogs: 'Nascondi log recenti',
       showRecentLogs: 'Mostra log recenti',
       signedInTitle: 'Accesso effettuato',
@@ -121,7 +123,8 @@ export const it = defineLocale({
       'Il tuo backend di Hermes è più vecchio di questa build desktop e potrebbe non funzionare correttamente. Aggiornalo per allinearli.',
     updateHermes: 'Aggiorna Hermes',
     updateReadyTitle: 'Aggiornamento pronto',
-    updateReadyMessage: count => `${count} ${count === 1 ? 'nuova modifica disponibile' : 'nuove modifiche disponibili'}.`,
+    updateReadyMessage: count =>
+      `${count} ${count === 1 ? 'nuova modifica disponibile' : 'nuove modifiche disponibili'}.`,
     seeWhatsNew: 'Scopri le novità',
     errors: {
       elevenLabsNeedsKey: 'ElevenLabs STT richiede ELEVENLABS_API_KEY.',
@@ -343,10 +346,12 @@ export const it = defineLocale({
       test: 'Invia notifica di prova',
       testTitle: 'Hermes',
       testBody: 'Le notifiche funzionano.',
-      testSent: 'Prova inviata. Se non compare nulla, controlla i permessi di notifica del sistema operativo e Focus/Non disturbare.',
+      testSent:
+        'Prova inviata. Se non compare nulla, controlla i permessi di notifica del sistema operativo e Focus/Non disturbare.',
       testUnsupported: 'Questo sistema non supporta le notifiche native.',
       completionSoundTitle: 'Suono di completamento',
-      completionSoundDesc: "Viene riprodotto al termine di un turno dell'agente. Scegli un preset e ascoltane l'anteprima qui.",
+      completionSoundDesc:
+        "Viene riprodotto al termine di un turno dell'agente. Scegli un preset e ascoltane l'anteprima qui.",
       completionSoundPreview: 'Anteprima'
     },
     sections: {
@@ -384,14 +389,15 @@ export const it = defineLocale({
       uiScaleDesc: (percent: number) =>
         `Scala testo e controlli in tutta l'app. Funzionano anche Cmd/Ctrl con +, - e 0. Attuale: ${percent}%.`,
       translucencyTitle: 'Traslucenza della finestra',
-      translucencyDesc: 'Vedi il desktop attraverso l\'intera finestra. Solo macOS e Windows.',
+      translucencyDesc: "Vedi il desktop attraverso l'intera finestra. Solo macOS e Windows.",
       embedsTitle: 'Embed in linea',
       embedsDesc:
         'Le anteprime avanzate vengono caricate da siti di terze parti (YouTube, X, …). Chiedi mostra un segnaposto finché non ne autorizzi ciascuno; Sempre le carica automaticamente; Off mantiene link semplici.',
       embedsAsk: 'Chiedi',
       embedsAlways: 'Sempre',
       embedsOff: 'Off',
-      embedsReset: (count: number) => `Reimposta ${count} ${count === 1 ? 'servizio consentito' : 'servizi consentiti'}`,
+      embedsReset: (count: number) =>
+        `Reimposta ${count} ${count === 1 ? 'servizio consentito' : 'servizi consentiti'}`,
       product: 'Prodotto',
       productDesc: 'Attività degli strumenti in forma leggibile con riepiloghi concisi.',
       technical: 'Tecnico',
@@ -418,7 +424,7 @@ export const it = defineLocale({
         on: 'On',
         off: 'Off',
         scaleTitle: 'Dimensione',
-        scaleDesc: 'Ridimensiona la mascotte fluttuante. Si applica ovunque all\'istante.',
+        scaleDesc: "Ridimensiona la mascotte fluttuante. Si applica ovunque all'istante.",
         roamTitle: 'Vagabondaggio',
         roamDesc: 'Lascia che il pet vaghi per la finestra da solo quando è inattivo.',
         chooseTitle: 'Scegli un pet',
@@ -673,7 +679,8 @@ export const it = defineLocale({
       cantUpdate: "Questa build non può aggiornarsi da sola all'interno dell'app.",
       cantReach: 'Impossibile raggiungere il server degli aggiornamenti.',
       tapCheck: 'Tocca "Controlla ora" per cercare aggiornamenti.',
-      updateReady: count => `Un nuovo aggiornamento è pronto (${count} ${count === 1 ? 'modifica inclusa' : 'modifiche incluse'}).`,
+      updateReady: count =>
+        `Un nuovo aggiornamento è pronto (${count} ${count === 1 ? 'modifica inclusa' : 'modifiche incluse'}).`,
       lastChecked: age => `Ultimo controllo ${age}`,
       justNowSuffix: ' · proprio ora',
       automaticUpdates: 'Aggiornamenti automatici',
@@ -736,14 +743,16 @@ export const it = defineLocale({
       envOverrideDesc:
         "Rimuovi HERMES_DESKTOP_REMOTE_URL e HERMES_DESKTOP_REMOTE_TOKEN per usare l'impostazione salvata qui sotto.",
       localTitle: 'Gateway locale',
-      localDesc: 'Avvia un backend Hermes privato su localhost. È l\'impostazione predefinita e funziona offline.',
+      localDesc: "Avvia un backend Hermes privato su localhost. È l'impostazione predefinita e funziona offline.",
       remoteTitle: 'Gateway remoto',
       remoteDesc:
         'Connetti questa shell desktop a un backend Hermes remoto. I gateway ospitati usano OAuth oppure un nome utente e una password; quelli self-hosted possono usare un token di sessione.',
       remoteUrlTitle: 'URL remoto',
-      remoteUrlDesc: 'URL di base per il backend del dashboard remoto. I prefissi di percorso sono supportati, per esempio /hermes.',
+      remoteUrlDesc:
+        'URL di base per il backend del dashboard remoto. I prefissi di percorso sono supportati, per esempio /hermes.',
       probing: 'Verifica del metodo di autenticazione di questo gateway…',
-      probeError: "Impossibile raggiungere questo gateway per ora. Controlla l'URL — il metodo di autenticazione comparirà una volta che risponde.",
+      probeError:
+        "Impossibile raggiungere questo gateway per ora. Controlla l'URL — il metodo di autenticazione comparirà una volta che risponde.",
       signedIn: 'Autenticato',
       signIn: 'Accedi',
       signOut: 'Esci',
@@ -753,9 +762,11 @@ export const it = defineLocale({
         "Questo gateway usa un nome utente e una password. Hai eseguito l'accesso; la sessione si aggiorna automaticamente.",
       authSignedInOauth: "Questo gateway usa OAuth. Hai eseguito l'accesso; la sessione si aggiorna automaticamente.",
       authNeedsPassword: 'Questo gateway usa un nome utente e una password. Accedi per autorizzare questa app desktop.',
-      authNeedsOauth: provider => `Questo gateway usa OAuth. Accedi con ${provider} per autorizzare questa app desktop.`,
+      authNeedsOauth: provider =>
+        `Questo gateway usa OAuth. Accedi con ${provider} per autorizzare questa app desktop.`,
       tokenTitle: 'Token di sessione',
-      tokenDesc: "Il token di sessione del dashboard usato per l'accesso REST e WebSocket. Lascia vuoto per mantenere il token salvato.",
+      tokenDesc:
+        "Il token di sessione del dashboard usato per l'accesso REST e WebSocket. Lascia vuoto per mantenere il token salvato.",
       existingToken: value => `Token esistente ${value}`,
       savedToken: 'salvato',
       pasteSessionToken: 'Incolla il token di sessione',
@@ -859,7 +870,8 @@ export const it = defineLocale({
     },
     model: {
       loading: 'Caricamento della configurazione del modello...',
-      appliesDesc: 'Si applica alle nuove sessioni. Usa il selettore di modello nel composer per cambiare al volo la chat attiva.',
+      appliesDesc:
+        'Si applica alle nuove sessioni. Usa il selettore di modello nel composer per cambiare al volo la chat attiva.',
       provider: 'Provider',
       model: 'Modello',
       applying: 'Applicazione...',
@@ -869,7 +881,8 @@ export const it = defineLocale({
       defaultsFailed: 'Impossibile salvare i valori predefiniti del modello',
       auxiliaryTitle: 'Modelli ausiliari',
       resetAllToMain: 'Reimposta tutti su principale',
-      auxiliaryDesc: 'Le attività di supporto girano sul modello principale per impostazione predefinita. Assegna un modello dedicato a qualsiasi attività per sovrascrivere.',
+      auxiliaryDesc:
+        'Le attività di supporto girano sul modello principale per impostazione predefinita. Assegna un modello dedicato a qualsiasi attività per sovrascrivere.',
       setToMain: 'Imposta su principale',
       change: 'Cambia',
       autoUseMain: 'auto · usa il modello principale',
@@ -925,7 +938,8 @@ export const it = defineLocale({
       defaultDirTitle: 'Directory di progetto predefinita',
       defaultDirDesc:
         "Le nuove sessioni partono da questa cartella a meno che tu non ne scelga un'altra. Lasciala vuota per usare la tua directory home.",
-      defaultDirUpdated: 'Directory di progetto predefinita aggiornata — avvia una nuova chat (Ctrl/⌘+N) perché abbia effetto',
+      defaultDirUpdated:
+        'Directory di progetto predefinita aggiornata — avvia una nuova chat (Ctrl/⌘+N) perché abbia effetto',
       defaultsTo: label => `Predefinito: ${label}.`,
       change: 'Cambia',
       choose: 'Scegli',
@@ -953,7 +967,8 @@ export const it = defineLocale({
       selectedMessage: provider => `${provider} è ora attivo.`,
       failedSelect: provider => `Impossibile selezionare ${provider}`,
       failedLoad: 'Caricamento della configurazione degli strumenti non riuscito',
-      noProviderOptions: 'Questo toolset non ha opzioni di provider — abilitalo e funziona con la tua configurazione attuale.',
+      noProviderOptions:
+        'Questo toolset non ha opzioni di provider — abilitalo e funziona con la tua configurazione attuale.',
       noProviders: 'Nessun provider disponibile per questo toolset al momento.',
       ready: 'Pronto',
       nousIncluded: 'Incluso con un abbonamento Nous — accedi al Nous Portal per attivarlo.',
@@ -1348,7 +1363,8 @@ export const it = defineLocale({
     required: 'Obbligatorio',
     recommended: 'Consigliato',
     advanced: count => `Avanzate (${count})`,
-    noTokenNeeded: 'Questa piattaforma non richiede un token qui. Usa la guida di configurazione sopra, poi abilitala di seguito.',
+    noTokenNeeded:
+      'Questa piattaforma non richiede un token qui. Usa la guida di configurazione sopra, poi abilitala di seguito.',
     enabled: 'Abilitato',
     disabled: 'Disabilitato',
     unsavedChanges: 'Modifiche non salvate',
@@ -1383,7 +1399,7 @@ export const it = defineLocale({
       TELEGRAM_PROXY: { label: 'URL del proxy', help: 'Necessario solo su reti in cui Telegram è bloccato.' },
       DISCORD_BOT_TOKEN: {
         label: 'Token del bot',
-        help: 'Crea un\'applicazione nel Discord Developer Portal, aggiungi un bot, poi incolla il suo token.'
+        help: "Crea un'applicazione nel Discord Developer Portal, aggiungi un bot, poi incolla il suo token."
       },
       DISCORD_ALLOWED_USERS: {
         label: 'ID utente Discord consentiti',
@@ -1400,7 +1416,7 @@ export const it = defineLocale({
       },
       DISCORD_HOME_CHANNEL_NAME: {
         label: 'Nome del canale principale',
-        help: 'Nome visualizzato del canale principale nei log e nell\'output di stato.'
+        help: "Nome visualizzato del canale principale nei log e nell'output di stato."
       },
       BLUEBUBBLES_ALLOW_ALL_USERS: {
         label: 'Consenti tutti gli utenti iMessage',
@@ -1417,18 +1433,21 @@ export const it = defineLocale({
         placeholder: 'Incolla il token del bot Slack'
       },
       SLACK_APP_TOKEN: {
-        label: 'Token dell\'app Slack',
+        label: "Token dell'app Slack",
         help: 'Usa il token a livello di app richiesto per la Socket Mode.',
-        placeholder: 'Incolla il token dell\'app Slack'
+        placeholder: "Incolla il token dell'app Slack"
       },
-      SLACK_ALLOWED_USERS: { label: 'ID utente Slack consentiti', help: 'Consigliato. ID utente Slack separati da virgola.' },
+      SLACK_ALLOWED_USERS: {
+        label: 'ID utente Slack consentiti',
+        help: 'Consigliato. ID utente Slack separati da virgola.'
+      },
       MATTERMOST_URL: { label: 'URL del server', placeholder: 'https://mattermost.example.com' },
       MATTERMOST_TOKEN: { label: 'Token del bot' },
       MATTERMOST_ALLOWED_USERS: {
         label: 'ID utente consentiti',
         help: 'Consigliato. ID utente Mattermost separati da virgola.'
       },
-      MATRIX_HOMESERVER: { label: 'URL dell\'homeserver', placeholder: 'https://matrix.org' },
+      MATRIX_HOMESERVER: { label: "URL dell'homeserver", placeholder: 'https://matrix.org' },
       MATRIX_ACCESS_TOKEN: { label: 'Token di accesso' },
       MATRIX_USER_ID: { label: 'ID utente del bot', placeholder: '@hermes:example.org' },
       MATRIX_ALLOWED_USERS: {
@@ -1441,10 +1460,13 @@ export const it = defineLocale({
         help: 'URL di un bridge REST signal-cli in esecuzione.'
       },
       SIGNAL_ACCOUNT: { label: 'Numero di telefono', help: 'Il numero registrato con il tuo bridge signal-cli.' },
-      SIGNAL_ALLOWED_USERS: { label: 'Utenti Signal consentiti', help: 'Consigliato. Identificatori Signal separati da virgola.' },
+      SIGNAL_ALLOWED_USERS: {
+        label: 'Utenti Signal consentiti',
+        help: 'Consigliato. Identificatori Signal separati da virgola.'
+      },
       WHATSAPP_ENABLED: {
         label: 'Abilita il bridge WhatsApp',
-        help: 'Impostato automaticamente dall\'interruttore qui sotto. Non modificarlo a meno che tu non sappia di averne bisogno.'
+        help: "Impostato automaticamente dall'interruttore qui sotto. Non modificarlo a meno che tu non sappia di averne bisogno."
       },
       WHATSAPP_MODE: { label: 'Modalità bridge' },
       WHATSAPP_ALLOWED_USERS: {
@@ -1490,7 +1512,8 @@ export const it = defineLocale({
     notSet: 'Non impostato',
     soulDesc: 'Il prompt di sistema e le istruzioni sulla persona incorporati in questo profilo.',
     soulOptional: 'facoltativo',
-    soulPlaceholder: mode => `Il prompt di sistema / la persona per questo profilo.\nLascia vuoto per mantenere il valore predefinito ${mode}.`,
+    soulPlaceholder: mode =>
+      `Il prompt di sistema / la persona per questo profilo.\nLascia vuoto per mantenere il valore predefinito ${mode}.`,
     soulPlaceholderCloned: 'clonato',
     soulPlaceholderEmpty: 'vuoto',
     unsavedChanges: 'Modifiche non salvate',
@@ -1569,7 +1592,7 @@ export const it = defineLocale({
       weekdays: 'Dal lunedì al venerdì alle 9:00',
       weekly: 'Ogni lunedì alle 9:00',
       monthly: 'Il primo giorno di ogni mese alle 9:00',
-      hourly: 'All\'inizio di ogni ora',
+      hourly: "All'inizio di ogni ora",
       'every-15-minutes': 'Ogni 15 minuti',
       custom: 'Sintassi cron o linguaggio naturale'
     },
@@ -1588,11 +1611,11 @@ export const it = defineLocale({
     weekdaysAt: time => `Giorni feriali alle ${time}`,
     everyDayOfWeekAt: (day, time) => `Ogni ${day} alle ${time}`,
     monthlyOnDayAt: (dayOfMonth, time) => `Ogni mese il giorno ${dayOfMonth} alle ${time}`,
-    topOfHour: 'All\'inizio di ogni ora',
+    topOfHour: "All'inizio di ogni ora",
     everyHourAt: minute => `Ogni ora al minuto :${minute}`,
     newCron: 'Nuovo cron',
     emptyDescNew:
-      'Pianifica un prompt da eseguire secondo un\'espressione cron. Hermes lo eseguirà e consegnerà i risultati alla destinazione che scegli.',
+      "Pianifica un prompt da eseguire secondo un'espressione cron. Hermes lo eseguirà e consegnerà i risultati alla destinazione che scegli.",
     emptyDescSearch: 'Prova una query di ricerca più ampia.',
     emptyTitleNew: 'Ancora nessun job pianificato',
     emptyTitleSearch: 'Nessuna corrispondenza',
@@ -1628,8 +1651,10 @@ export const it = defineLocale({
     failedSave: 'Impossibile salvare il cronjob',
     editTitle: 'Modifica cronjob',
     createTitle: 'Nuovo cronjob',
-    editDesc: 'Aggiorna la pianificazione, il prompt o la destinazione di consegna. Le modifiche si applicano alla prossima esecuzione.',
-    createDesc: 'Pianifica un prompt da eseguire automaticamente. Usa la sintassi cron o una frase naturale come "ogni 15 minuti".',
+    editDesc:
+      'Aggiorna la pianificazione, il prompt o la destinazione di consegna. Le modifiche si applicano alla prossima esecuzione.',
+    createDesc:
+      'Pianifica un prompt da eseguire automaticamente. Usa la sintassi cron o una frase naturale come "ogni 15 minuti".',
     nameLabel: 'Nome',
     namePlaceholder: 'Briefing mattutino',
     promptLabel: 'Prompt',
@@ -1716,7 +1741,7 @@ export const it = defineLocale({
       namePlaceholder: 'es. Skunkworks',
       foldersLabel: 'Cartelle',
       ideaLabel: 'Idea',
-      ideaPlaceholder: "Di cosa si occupa questo progetto? (salvato in IDEA.md)",
+      ideaPlaceholder: 'Di cosa si occupa questo progetto? (salvato in IDEA.md)',
       ideaGenerate: 'Genera idea',
       ideaGenerating: 'Generazione…',
       ideaShuffle: 'Mescola i template',
@@ -1738,7 +1763,8 @@ export const it = defineLocale({
       createFailed: 'Impossibile creare il progetto',
       staleBackend:
         'Aggiorna il backend di Hermes per creare progetti — il tuo backend è più vecchio di questa app desktop (Impostazioni → Aggiornamenti → Backend).',
-      deleteConfirm: 'Questa operazione rimuove il progetto salvato da Hermes. File, repository git e worktree restano invariati.',
+      deleteConfirm:
+        'Questa operazione rimuove il progetto salvato da Hermes. File, repository git e worktree restano invariati.',
       startWork: 'Nuovo worktree',
       newWorktreeTitle: 'Nuovo worktree',
       newWorktreeDesc: 'Assegna un nome al branch per questo worktree.',
@@ -1780,7 +1806,7 @@ export const it = defineLocale({
       rename: 'Rinomina',
       archive: 'Archivia',
       newWindow: 'Nuova finestra',
-      copyIdFailed: 'Impossibile copiare l\'ID della sessione',
+      copyIdFailed: "Impossibile copiare l'ID della sessione",
       actionsFor: title => `Azioni per ${title}`,
       sessionActions: 'Azioni sessione',
       sessionRunning: 'Sessione in esecuzione',
@@ -1825,7 +1851,7 @@ export const it = defineLocale({
     ],
     startVoice: 'Avvia conversazione vocale',
     queueMessage: 'Metti in coda il messaggio',
-    steer: 'Guida l\'esecuzione in corso',
+    steer: "Guida l'esecuzione in corso",
     stop: 'Interrompi',
     send: 'Invia',
     speaking: 'Riproduzione',
@@ -1835,7 +1861,7 @@ export const it = defineLocale({
     listening: 'In ascolto',
     muteMic: 'Disattiva microfono',
     unmuteMic: 'Attiva microfono',
-    stopListening: 'Interrompi l\'ascolto e invia',
+    stopListening: "Interrompi l'ascolto e invia",
     stopShort: 'Interrompi',
     endConversation: 'Termina conversazione vocale',
     endShort: 'Termina',
@@ -1856,7 +1882,7 @@ export const it = defineLocale({
       '/clear': 'avvia una nuova sessione',
       '/resume': 'riprendi una sessione precedente',
       '/details': 'controlla il livello di dettaglio della trascrizione',
-      '/copy': 'copia la selezione o l\'ultimo messaggio dell\'assistente',
+      '/copy': "copia la selezione o l'ultimo messaggio dell'assistente",
       '/quit': 'esci da hermes'
     },
     hotkeyDescs: {
@@ -1866,13 +1892,13 @@ export const it = defineLocale({
       'composer.sendNewline': 'invia · Shift+Invio per andare a capo',
       'composer.sendQueued': 'invia il prossimo turno in coda',
       'keybinds.openPanel': 'tutte le scorciatoie da tastiera',
-      'composer.cancel': 'chiudi il popover · annulla l\'esecuzione',
+      'composer.cancel': "chiudi il popover · annulla l'esecuzione",
       'composer.history': 'scorri popover / cronologia'
     },
     attachUrlTitle: 'Allega un URL',
     attachUrlDesc: 'Hermes recupererà la pagina e la includerà come contesto per questo turno.',
     urlPlaceholder: 'https://example.com/post',
-    urlHintPre: 'Includi l\'URL completo, es. ',
+    urlHintPre: "Includi l'URL completo, es. ",
     attach: 'Allega',
     queued: count => `${count} in coda`,
     attachmentOnly: 'Turno con solo allegati',
@@ -1885,7 +1911,8 @@ export const it = defineLocale({
     queueSend: 'Invia',
     queueDelete: 'Elimina',
     queueStuckTitle: 'Messaggio in coda non inviato',
-    queueStuckBody: 'Un turno in coda ha continuato a non essere inviato. È ancora in coda — prova a inviarlo di nuovo.',
+    queueStuckBody:
+      'Un turno in coda ha continuato a non essere inviato. È ancora in coda — prova a inviarlo di nuovo.',
     previewUnavailable: 'Anteprima non disponibile',
     previewLabel: label => `Anteprima ${label}`,
     couldNotPreview: label => `Impossibile visualizzare l'anteprima di ${label}`,
@@ -1957,8 +1984,10 @@ export const it = defineLocale({
       viewAsList: 'Visualizza come elenco',
       revert: 'Ripristina',
       revertAll: 'Ripristina tutto',
-      revertConfirm: 'Scartare le modifiche a questo file e ripristinarlo allo stato del commit? L’operazione non può essere annullata.',
-      revertAllConfirm: 'Scartare tutte le modifiche e ripristinare i file allo stato del commit? L’operazione non può essere annullata.',
+      revertConfirm:
+        'Scartare le modifiche a questo file e ripristinarlo allo stato del commit? L’operazione non può essere annullata.',
+      revertAllConfirm:
+        'Scartare tutte le modifiche e ripristinare i file allo stato del commit? L’operazione non può essere annullata.',
       staged: 'In stage',
       noChanges: 'Nessuna modifica',
       notRepo: 'Non è un repository git',
@@ -2013,12 +2042,14 @@ export const it = defineLocale({
     availableBody: 'Una nuova versione di Hermes è pronta per l’installazione.',
     availableTitleBackend: 'Aggiornamento del backend disponibile',
     availableBodyBackend: 'Una versione più recente del backend Hermes connesso è pronta per l’installazione.',
-    availableBodyNoChangelog: 'Una versione più recente è pronta. Le note di rilascio non sono disponibili per questo tipo di installazione.',
+    availableBodyNoChangelog:
+      'Una versione più recente è pronta. Le note di rilascio non sono disponibili per questo tipo di installazione.',
     updateNow: 'Aggiorna ora',
     maybeLater: 'Forse più tardi',
     moreChanges: count => `+ ${count} modific${count === 1 ? 'a' : 'he'} in più inclus${count === 1 ? 'a' : 'e'}.`,
     manualTitle: 'Aggiorna dal terminale',
-    manualBody: 'Hai installato Hermes dalla riga di comando, quindi anche gli aggiornamenti vengono eseguiti lì. Incolla questo nel terminale:',
+    manualBody:
+      'Hai installato Hermes dalla riga di comando, quindi anche gli aggiornamenti vengono eseguiti lì. Incolla questo nel terminale:',
     manualPickedUp: 'Hermes userà la nuova versione al prossimo avvio.',
     guiSkewTitle: 'Aggiorna l’app desktop',
     guiSkewBody:
@@ -2040,7 +2071,8 @@ export const it = defineLocale({
       restarting: 'Riavvio del backend per caricare l’aggiornamento…',
       notAvailable: 'Aggiornamento non disponibile per questo backend.',
       failed: 'Aggiornamento del backend non riuscito.',
-      noReturn: 'Il backend non è tornato online. L’aggiornamento potrebbe non essere stato completato — controlla l’host del backend.'
+      noReturn:
+        'Il backend non è tornato online. L’aggiornamento potrebbe non essere stato completato — controlla l’host del backend.'
     }
   },
 
@@ -2085,7 +2117,8 @@ export const it = defineLocale({
 
   onboarding: {
     headerTitle: 'Configuriamo insieme Hermes Agent',
-    headerDesc: 'Collega un provider di modelli per iniziare a chattare. La maggior parte delle opzioni richiede un solo clic.',
+    headerDesc:
+      'Collega un provider di modelli per iniziare a chattare. La maggior parte delle opzioni richiede un solo clic.',
     preparingInstall: 'Hermes sta completando l’installazione. Al primo avvio di solito richiede meno di un minuto.',
     starting: 'Avvio di Hermes…',
     lookingUpProviders: 'Ricerca dei provider...',
@@ -2100,14 +2133,16 @@ export const it = defineLocale({
     apiKeyOptions: {
       openrouter: {
         short: 'una key, molti modelli',
-        description: 'Ospita centinaia di modelli dietro un’unica key. Buona scelta predefinita per le nuove installazioni.'
+        description:
+          'Ospita centinaia di modelli dietro un’unica key. Buona scelta predefinita per le nuove installazioni.'
       },
       openai: { short: 'modelli tipo GPT', description: 'Accesso diretto ai modelli OpenAI.' },
       gemini: { short: 'modelli Gemini', description: 'Accesso diretto ai modelli Google Gemini.' },
       xai: { short: 'modelli Grok', description: 'Accesso diretto ai modelli xAI Grok.' },
       local: {
         short: 'self-hosted',
-        description: 'Punta Hermes a un endpoint locale o self-hosted compatibile con OpenAI (vLLM, llama.cpp, Ollama, ecc.).'
+        description:
+          'Punta Hermes a un endpoint locale o self-hosted compatibile con OpenAI (vLLM, llama.cpp, Ollama, ecc.).'
       }
     },
     backToSignIn: 'Torna all’accesso',
@@ -2275,8 +2310,10 @@ export const it = defineLocale({
       openContextUsage: 'Apri ripartizione utilizzo del contesto',
       session: 'Sessione',
       runtimeSessionElapsed: 'Tempo trascorso sessione runtime',
-      yoloOn: 'YOLO attivo — approvazione automatica dei comandi pericolosi. Clicca per disattivare. Shift+clic per commutarlo globalmente.',
-      yoloOff: 'YOLO disattivo — clicca per approvare automaticamente i comandi pericolosi. Shift+clic per commutarlo globalmente.',
+      yoloOn:
+        'YOLO attivo — approvazione automatica dei comandi pericolosi. Clicca per disattivare. Shift+clic per commutarlo globalmente.',
+      yoloOff:
+        'YOLO disattivo — clicca per approvare automaticamente i comandi pericolosi. Shift+clic per commutarlo globalmente.',
       modelNone: 'nessuno',
       noModel: 'nessun modello',
       switchModel: 'Cambia modello',
@@ -2311,7 +2348,7 @@ export const it = defineLocale({
     emptyTitle: 'Vuota',
     emptyBody: 'Questa cartella è vuota.',
     treeErrorTitle: 'Errore albero',
-    treeErrorBody: 'Si è verificato un errore nel rendering di questa cartella nell\'albero dei file.',
+    treeErrorBody: "Si è verificato un errore nel rendering di questa cartella nell'albero dei file.",
     tryAgain: 'Riprova',
     loadingTree: 'Caricamento albero dei file',
     loadingFiles: 'Caricamento file',
@@ -2356,13 +2393,13 @@ export const it = defineLocale({
     saveFailed: message => `Impossibile salvare: ${message}`,
     diskChangedTitle: 'File modificato su disco',
     diskChangedBody:
-      'Questo file è cambiato da quando l\'hai aperto. Sovrascriverlo con la tua versione, oppure scartare le modifiche e ricaricare?',
+      "Questo file è cambiato da quando l'hai aperto. Sovrascriverlo con la tua versione, oppure scartare le modifiche e ricaricare?",
     overwrite: 'Sovrascrivi',
     discardReload: 'Scarta e ricarica',
     console: {
       deselect: 'Deseleziona voce',
       select: 'Seleziona voce',
-      copyFailed: 'Impossibile copiare l\'output della console',
+      copyFailed: "Impossibile copiare l'output della console",
       copyEntry: 'Copia questa voce',
       sendEntry: 'Invia questa voce alla chat',
       messages: count => `${count} messaggi della console`,
@@ -2377,10 +2414,11 @@ export const it = defineLocale({
       empty: 'Nessun messaggio della console per ora.',
       promptHeader: 'Console anteprima:',
       sentTitle: 'Inviato alla chat',
-      sentMessage: count => `${count} voc${count === 1 ? 'e' : 'i'} di log aggiunt${count === 1 ? 'a' : 'e'} al composer`
+      sentMessage: count =>
+        `${count} voc${count === 1 ? 'e' : 'i'} di log aggiunt${count === 1 ? 'a' : 'e'} al composer`
     },
     web: {
-      appFailedToBoot: 'Avvio dell\'app di anteprima non riuscito',
+      appFailedToBoot: "Avvio dell'app di anteprima non riuscito",
       serverNotFound: 'Server non trovato',
       failedToLoad: 'Caricamento anteprima non riuscito',
       tryAgain: 'Riprova',
@@ -2395,11 +2433,12 @@ export const it = defineLocale({
       showConsole: 'Mostra console anteprima',
       hideDevTools: 'Nascondi DevTools anteprima',
       openDevTools: 'Apri DevTools anteprima',
-      finishedRestarting: message => `Hermes ha completato il riavvio del server di anteprima${message ? `: ${message}` : ''}`,
+      finishedRestarting: message =>
+        `Hermes ha completato il riavvio del server di anteprima${message ? `: ${message}` : ''}`,
       failedRestarting: message => `Riavvio del server non riuscito: ${message}`,
       unknownError: 'errore sconosciuto',
       restartedTitle: 'Server di anteprima riavviato',
-      reloadingNow: 'Ricaricamento dell\'anteprima in corso.',
+      reloadingNow: "Ricaricamento dell'anteprima in corso.",
       restartFailedTitle: 'Riavvio anteprima non riuscito',
       restartFailedMessage: 'Hermes non è riuscito a riavviare il server.',
       stillWorking:
@@ -2409,7 +2448,7 @@ export const it = defineLocale({
       filesChanged: (count, url) => `${count} file modificati, ricaricamento anteprima: ${url}`,
       watchFailed: message => `Impossibile monitorare il file di anteprima: ${message}`,
       moduleMimeDescription:
-        'Gli script dei moduli vengono serviti con il tipo MIME errato. Di solito significa che un file server statico sta servendo un\'app Vite/React invece del server di sviluppo del progetto.',
+        "Gli script dei moduli vengono serviti con il tipo MIME errato. Di solito significa che un file server statico sta servendo un'app Vite/React invece del server di sviluppo del progetto.",
       loadFailedConsole: (code, message) => `Caricamento non riuscito${code ? ` (${code})` : ''}: ${message}`,
       unreachableDescription: 'Impossibile raggiungere la pagina di anteprima.',
       openTarget: url => `Apri ${url}`,
@@ -2423,7 +2462,7 @@ export const it = defineLocale({
       loadingResponse: 'Hermes sta caricando una risposta',
       resumeWhenBackgroundDone: count =>
         count === 1
-          ? 'Riprenderà al termine dell\'attività in background'
+          ? "Riprenderà al termine dell'attività in background"
           : `Riprenderà al termine di ${count} attività in background`,
       thinking: 'Ragionamento',
       today: time => `Oggi, ${time}`,
@@ -2527,8 +2566,16 @@ export const it = defineLocale({
         runningTool: action => `Esecuzione ${action.toLowerCase()}`
       },
       titles: {
-        browser_click: { done: 'Elemento della pagina cliccato', pending: 'Clic sull\'elemento della pagina', pendingAction: 'Clic' },
-        browser_fill: { done: 'Campo del modulo compilato', pending: 'Compilazione campo del modulo', pendingAction: 'Compilazione' },
+        browser_click: {
+          done: 'Elemento della pagina cliccato',
+          pending: "Clic sull'elemento della pagina",
+          pendingAction: 'Clic'
+        },
+        browser_fill: {
+          done: 'Campo del modulo compilato',
+          pending: 'Compilazione campo del modulo',
+          pendingAction: 'Compilazione'
+        },
         browser_navigate: { done: 'Pagina aperta', pending: 'Apertura pagina', pendingAction: 'Apertura' },
         browser_snapshot: {
           done: 'Snapshot della pagina acquisito',
@@ -2540,7 +2587,11 @@ export const it = defineLocale({
           pending: 'Acquisizione screenshot',
           pendingAction: 'Acquisizione'
         },
-        browser_type: { done: 'Testo digitato nella pagina', pending: 'Digitazione nella pagina', pendingAction: 'Digitazione' },
+        browser_type: {
+          done: 'Testo digitato nella pagina',
+          pending: 'Digitazione nella pagina',
+          pendingAction: 'Digitazione'
+        },
         clarify: { done: 'Domanda posta', pending: 'Formulazione di una domanda', pendingAction: 'Domanda' },
         cronjob: { done: 'Cron job', pending: 'Pianificazione cron job', pendingAction: 'Pianificazione' },
         edit_file: { done: 'File modificato', pending: 'Modifica file', pendingAction: 'Modifica' },
@@ -2570,7 +2621,8 @@ export const it = defineLocale({
     sudoSendFailed: 'Impossibile inviare la password sudo',
     secretSendFailed: 'Impossibile inviare il secret',
     sudoTitle: 'Password amministratore',
-    sudoDesc: 'Hermes ha bisogno della tua password sudo per eseguire un comando con privilegi. Viene inviata solo al tuo agente locale.',
+    sudoDesc:
+      'Hermes ha bisogno della tua password sudo per eseguire un comando con privilegi. Viene inviata solo al tuo agente locale.',
     sudoPlaceholder: 'password sudo',
     secretTitle: 'Secret richiesto',
     secretDesc: 'Hermes ha bisogno di una credenziale per continuare.',
@@ -2578,7 +2630,7 @@ export const it = defineLocale({
   },
 
   desktop: {
-    audioReadFailed: 'Impossibile leggere l\'audio registrato',
+    audioReadFailed: "Impossibile leggere l'audio registrato",
     sessionUnavailable: 'Sessione non disponibile',
     createSessionFailed: 'Impossibile creare una nuova sessione',
     promptFailed: 'Prompt non riuscito',
@@ -2627,13 +2679,13 @@ export const it = defineLocale({
     downloadStarted: 'Download avviato',
     restartToUseSaveImage: 'Riavvia Hermes Desktop per usare Salva immagine.',
     restartToSaveImages: 'Riavvia Hermes Desktop per salvare le immagini',
-    imageDownloadFailed: 'Download dell\'immagine non riuscito',
+    imageDownloadFailed: "Download dell'immagine non riuscito",
     openImage: 'Apri immagine',
     downloadImage: 'Scarica immagine',
     savingImage: 'Salvataggio immagine',
     imagePreviewFailed: 'Anteprima immagine non riuscita',
     imageAttach: 'Allega immagine',
-    imageWriteFailed: 'Impossibile scrivere l\'immagine su disco.',
+    imageWriteFailed: "Impossibile scrivere l'immagine su disco.",
     imageAttachFailed: 'Allegato immagine non riuscito',
     attachImages: 'Allega immagini',
     clipboard: 'Appunti',
@@ -2651,7 +2703,7 @@ export const it = defineLocale({
 
   errors: {
     genericFailure: 'Qualcosa è andato storto',
-    boundaryTitle: 'Qualcosa si è rotto nell\'interfaccia',
+    boundaryTitle: "Qualcosa si è rotto nell'interfaccia",
     boundaryDesc: 'La vista ha riscontrato un errore imprevisto. Le tue chat e le impostazioni sono al sicuro.',
     reloadWindow: 'Ricarica finestra',
     openLogs: 'Apri log'

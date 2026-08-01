@@ -80,10 +80,7 @@ describe('user theme registry', () => {
     const legacy = makeTheme('Legacy')
     legacy.name = builtinName
     legacy.label = 'My Aurora'
-    window.localStorage.setItem(
-      'hermes-desktop-user-themes-v1',
-      JSON.stringify({ [builtinName]: legacy })
-    )
+    window.localStorage.setItem('hermes-desktop-user-themes-v1', JSON.stringify({ [builtinName]: legacy }))
 
     // Re-run the module's init so the atom re-reads localStorage from scratch.
     // resetModules gives a fresh module graph, so compare against that graph's
