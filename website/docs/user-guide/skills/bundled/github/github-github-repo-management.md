@@ -21,7 +21,7 @@ Clone/create/fork repos; manage remotes, releases.
 | License | MIT |
 | Platforms | linux, macos, windows |
 | Tags | `GitHub`, `Repositories`, `Git`, `Releases`, `Secrets`, `Configuration` |
-| Related skills | [`github-auth`](/docs/user-guide/skills/bundled/github/github-github-auth), [`github-pr-workflow`](/docs/user-guide/skills/bundled/github/github-github-pr-workflow), [`github-issues`](/docs/user-guide/skills/bundled/github/github-github-issues) |
+| Related skills | [`github-auth`](./github-github-auth.md), [`github-pr-workflow`](./github-github-pr-workflow.md), [`github-issues`](./github-github-issues.md) |
 
 ## Reference: full SKILL.md
 
@@ -48,7 +48,7 @@ else
     if _hermes_env="${HERMES_HOME:-$HOME/.hermes}/.env"; [ -f "$_hermes_env" ] && grep -q "^GITHUB_TOKEN=" "$_hermes_env"; then
       GITHUB_TOKEN=$(grep "^GITHUB_TOKEN=" "$_hermes_env" | head -1 | cut -d= -f2 | tr -d '\n\r')
     elif grep -q "github.com" ~/.git-credentials 2>/dev/null; then
-      GITHUB_TOKEN=$(grep "github.com" ~/.git-credentials 2>/dev/null | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|')
+      GITHUB_TOKEN=$(uv run python3 "${HERMES_HOME:-$HOME/.hermes}/skills/github/github-auth/scripts/git-credential-token.py")
     fi
   fi
 fi
@@ -463,8 +463,8 @@ RUN_ID=<run_id>
 curl -s -L \
   -H "Authorization: token $GITHUB_TOKEN" \
   https://api.github.com/repos/$OWNER/$REPO/actions/runs/$RUN_ID/logs \
-  -o /tmp/ci-logs.zip
-cd /tmp && unzip -o ci-logs.zip -d ci-logs
+  -o ~/.hermes/cache/scratch/ci-logs.zip
+cd ~/.hermes/cache/scratch && unzip -o ci-logs.zip -d ci-logs
 
 # Re-run a failed workflow
 curl -s -X POST \

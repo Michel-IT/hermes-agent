@@ -1,14 +1,14 @@
 ---
-title: "Pretext"
+title: "Pretext — Build creative browser demos with DOM-free text layout"
 sidebar_label: "Pretext"
-description: "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry gam..."
+description: "Build creative browser demos with DOM-free text layout"
 ---
 
 {/* This page is auto-generated from the skill's SKILL.md by website/scripts/generate-skill-docs.py. Edit the source SKILL.md, not this page. */}
 
 # Pretext
 
-Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.
+Build creative browser demos with DOM-free text layout.
 
 ## Skill metadata
 
@@ -21,7 +21,7 @@ Use when building creative browser demos with @chenglou/pretext — DOM-free tex
 | License | MIT |
 | Platforms | linux, macos, windows |
 | Tags | `creative-coding`, `typography`, `pretext`, `ascii-art`, `canvas`, `generative`, `text-layout`, `kinetic-typography` |
-| Related skills | [`p5js`](/docs/user-guide/skills/bundled/creative/creative-p5js), [`claude-design`](/docs/user-guide/skills/bundled/creative/creative-claude-design), [`excalidraw`](/docs/user-guide/skills/bundled/creative/creative-excalidraw), [`architecture-diagram`](/docs/user-guide/skills/bundled/creative/creative-architecture-diagram) |
+| Related skills | [`p5js`](./creative-p5js.md), [`claude-design`](./creative-claude-design.md), [`excalidraw`](./creative-excalidraw.md), [`architecture-diagram`](./creative-architecture-diagram.md) |
 
 ## Reference: full SKILL.md
 
@@ -171,7 +171,7 @@ See `templates/donut-orbit.html` and `templates/hello-orb-flow.html` for working
 2. **Start from a template**:
    - `templates/hello-orb-flow.html` — text reflowing around a moving orb (reflow-around-obstacle pattern)
    - `templates/donut-orbit.html` — advanced example: measured ASCII logo obstacles, draggable wire sphere/cube, morphing shape fields, selectable DOM text, and dev-only controls
-   - `write_file` to a new `.html` in `/tmp/` or the user's workspace.
+   - `write_file` to a new `.html` in `~/.hermes/cache/scratch/` or the user's workspace.
 3. **Swap the corpus** for something intentional to the brief. Real prose, 10-100 sentences, no lorem.
 4. **Tune the aesthetic** — font, palette, composition, interaction. This is the work; don't skip it.
 5. **Verify locally**:
